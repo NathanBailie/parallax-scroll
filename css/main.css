@@ -2,9 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --header-color: #f4efec;
+    --text-color: #cdc6c3;
+    --galery-gap: calc(var(--index) * 7.5);
+}
+
+@font-face {
+    font-family: Outfit_Regular;
+    src: url('../assets/fonts/outfit-regular.woff2');
+}
+@font-face {
+    font-family: Raleway_Regular;
+    src: url('../assets/fonts/raleway-regular.woff2');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Outfit_Regular;
 }
 
 body {
-    background: #3c3c3c;
+    background: #201B1F;
+    color: #fafafa;
+    font-family: Raleway_Regular;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 6vw;
+}
+
+.hero__image {
+    width: calc(var(--index) * 36);
+    position: absolute;
+    left: 37vw;
+    top: 8vh;
+    z-index: -1;
+}
+
+.hero__title {
+    height: 100vh;
+}
+
+.hero__title h1 {
+    position: absolute;
+    font-size: calc(var(--index) * 7);
+    width: min-content;
+    top: 50vh; 
+    line-height: 0.9;
+}
+
+.galery {
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+}
+
+.galery > * {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galery__image {
+    max-width: calc(var(--index) * 22);
+    margin-bottom: var(--galery-gap);
+    max-height: 180vh;
+    border-radius: 7px;
+}
+
+.galery__text {
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: var(--galery-gap);
+}
+
+.galery__text h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: var(--header-color);
+    margin-bottom: 1.4rem;
+}
+
+.galery__text p {
+	line-height: 1.75;
+}
+
+.galery__item {
+	margin-bottom: var(--gallery-gap);
+}
+
+.galery__left {
+    margin-top: calc(var(--galery-gap) * 1.8);
+}
+
+.galery__right .galery__image,.galery__right .galery__text {
+    margin-bottom: 0;
+    margin-top: calc(var(--galery-gap));
 }
