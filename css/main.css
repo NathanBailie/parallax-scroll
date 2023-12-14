@@ -35,6 +35,10 @@ body {
     padding: 0 6vw;
 }
 
+.content, .hero__image, .hero__title, .gallery > * {
+	will-change: transform;
+}
+
 .hero__image {
     width: calc(var(--index) * 36);
     position: absolute;
