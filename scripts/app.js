@@ -21,7 +21,6 @@ if (ScrollTrigger.isTouch !== 1) {
     });
 
     let leftItems = gsap.utils.toArray('.galery__left .galery__item');
-
     leftItems.forEach((item) => {
         gsap.fromTo(item, { x: -150, opacity: 0 }, {
             opacity: 1,
@@ -36,7 +35,6 @@ if (ScrollTrigger.isTouch !== 1) {
     });
 
     let rightItems = gsap.utils.toArray('.galery__right .galery__item');
-
     rightItems.forEach((item) => {
         gsap.fromTo(item, { x: 150, opacity: 0 }, {
             opacity: 1,
