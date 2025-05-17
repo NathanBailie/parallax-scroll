@@ -1,0 +1,37 @@
+* {
+	font-family: '', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #201B1F;
+	color: #fafafa;
+	font-family: Raleway_Regular;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Outfit_Regular;
+}
+
+.container {
+	padding: 0 7.5vw;
+}
+
+.content,
+.hero__image,
+.hero__title,
+.gallery>* {
+	will-change: transform;
+}

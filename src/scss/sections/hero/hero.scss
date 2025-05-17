@@ -1,0 +1,21 @@
+.hero {
+	&__image {
+		width: calc(var(--index) * 36);
+		position: absolute;
+		left: 37vw;
+		top: 8vh;
+		z-index: -1;
+	}
+
+	&__title {
+		height: 100vh;
+
+		h1 {
+			position: absolute;
+			font-size: calc(var(--index) * 7);
+			width: min-content;
+			top: 50vh;
+			line-height: 0.9;
+		}
+	}
+}

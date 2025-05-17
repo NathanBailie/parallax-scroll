@@ -1,0 +1,23 @@
+// libs
+@use "../assets/css-libs/normalize.min.css" as *;
+
+// helpers
+@use "./base/variables.scss" as *;
+@use "./base/mixins.scss" as *;
+@use "./base/base_styles.scss" as *;
+
+// sections
+@use "sections/hero/hero.scss" as *;
+@use "sections/gallery/gallery.scss" as *;
+
+
+
+@font-face {
+	font-family: Outfit_Regular;
+	src: url('../assets/fonts/outfit-regular.woff2');
+}
+
+@font-face {
+	font-family: Raleway_Regular;
+	src: url('../assets/fonts/raleway-regular.woff2');
+}
